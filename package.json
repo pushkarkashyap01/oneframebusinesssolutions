@@ -1,0 +1,24 @@
+{
+  "name": "oneframebusinesssolutions-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushkarkashyap01/oneframebusinesssolutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pushkarkashyap01/oneframebusinesssolutions/issues"
+  },
+  "homepage": "https://github.com/pushkarkashyap01/oneframebusinesssolutions#readme",
+  "dependencies": {
+    "nodemailer": "^10.5.0"
+  }
+}
