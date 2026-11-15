@@ -1741,8 +1741,143 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Our Clients Logo Carousel
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+.clients-section {
+  padding: 65px 0;
+  overflow: hidden;
+}
+
+.clients-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.clients-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.clients-heading p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 0;
+}
+
+.clients-logo-track {
+  display: flex;
+  width: max-content;
+  animation: clients-scroll-right 30s linear infinite;
+  will-change: transform;
+}
+
+/* Move logos from left to right */
+@keyframes clients-scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Logo groups */
+.clients-logo-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 65px;
+  padding: 0 32px;
+}
+
+/* Individual logo containers */
+.client-logo {
+  width: 170px;
+  height: 105px;
+  flex: 0 0 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Default grayscale appearance */
+.client-logo img {
+  display: block;
+  max-width: 145px;
+  max-height: 75px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.65;
+  transition: all 0.35s ease;
+}
+
+/* Restore original colours on hover */
+.client-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.12);
+}
+
+/* Pause the entire moving strip on hover */
+.clients-marquee:hover .clients-logo-track {
+  animation-play-state: paused;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+  .clients-section {
+    padding: 45px 0;
+  }
+
+  .clients-heading h2 {
+    font-size: 27px;
+  }
+
+  .clients-logo-group {
+    gap: 35px;
+    padding: 0 18px;
+  }
+
+  .client-logo {
+    width: 125px;
+    height: 85px;
+    flex-basis: 125px;
+  }
+
+  .client-logo img {
+    max-width: 110px;
+    max-height: 65px;
+  }
+
+  .clients-logo-track {
+    animation-duration: 23s;
+  }
+
+}
+
+/* Accessibility: respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+  .clients-logo-track {
+    animation: none;
+  }
+
+  .clients-logo-group[aria-hidden="true"] {
+    display: none;
+  }
+
 }
