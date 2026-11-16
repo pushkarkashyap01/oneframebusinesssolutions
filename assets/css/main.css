@@ -1803,35 +1803,35 @@ section,
 
 /* Individual logo containers */
 .client-logo {
-  width: 170px;
-  height: 105px;
-  flex: 0 0 170px;
+  width: 200px;
+  height: 130px;
+  flex: 0 0 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Default grayscale appearance */
+/* Larger logos - Original Colours */
 .client-logo img {
   display: block;
-  max-width: 145px;
-  max-height: 75px;
+  max-width: 180px;
+  max-height: 100px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.65;
-  transition: all 0.35s ease;
-}
-
-/* Restore original colours on hover */
-.client-logo:hover img {
-  filter: grayscale(0%);
+  filter: none;
   opacity: 1;
-  transform: scale(1.12);
+  transition: none;
 }
 
-/* Pause the entire moving strip on hover */
+/* No hover effect */
+.client-logo:hover img {
+  filter: none;
+  opacity: 1;
+  transform: none;
+}
+
+/* Pause animation on hover */
 .clients-marquee:hover .clients-logo-track {
   animation-play-state: paused;
 }
@@ -1853,14 +1853,14 @@ section,
   }
 
   .client-logo {
-    width: 125px;
-    height: 85px;
-    flex-basis: 125px;
+    width: 155px;
+    height: 105px;
+    flex-basis: 155px;
   }
 
   .client-logo img {
-    max-width: 110px;
-    max-height: 65px;
+    max-width: 140px;
+    max-height: 85px;
   }
 
   .clients-logo-track {
@@ -1869,7 +1869,7 @@ section,
 
 }
 
-/* Accessibility: respect reduced-motion preferences */
+/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
 
   .clients-logo-track {
@@ -1881,3 +1881,44 @@ section,
   }
 
 }
+
+/*--------------------------------------------------------------
+# Reduced Section Spacing
+--------------------------------------------------------------*/
+
+/* Reduce space above and below website sections */
+main > section.section:not(.hero) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Reduce gaps below section headings */
+.section-title {
+  padding-bottom: 30px;
+}
+
+/* Reduce spacing in the client logo section */
+.clients-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+
+  main > section.section:not(.hero) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .section-title {
+    padding-bottom: 22px;
+  }
+
+  .clients-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+}
+
