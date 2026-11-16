@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Services | One Frame Business Solutions</title>
+
+  <meta name="description" content="Explore recruitment and talent solutions from One Frame Business Solutions. We help businesses find, assess and connect with the right professionals.">
+  <meta name="keywords" content="recruitment, staffing, talent acquisition, professional recruitment, technical recruitment">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/appletouch.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Services Page Styling -->
+  <style>
+    :root {
+      --of-gold: #bd8737;
+      --of-dark: #111719;
+      --of-text: #444;
+      --of-light: #f7f8f9;
+    }
+
+    .services-page {
+      color: var(--of-text);
+    }
+
+    .services-page .header {
+      background: rgba(13, 17, 19, 0.96);
+    }
+
+    /* Hero */
+
+    .services-hero {
+      position: relative;
+      padding: 165px 0 105px;
+      min-height: 590px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--of-dark);
+      color: #fff;
+    }
+
+    .services-hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.19;
+    }
+
+    .services-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, rgba(10, 14, 15, 0.97), rgba(10, 14, 15, 0.76));
+    }
+
+    .services-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .services-eyebrow {
+      display: inline-block;
+      color: var(--of-gold);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .services-hero h1 {
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1.12;
+      font-weight: 800;
+      margin-bottom: 24px;
+      max-width: 690px;
+    }
+
+    .services-hero h1 span {
+      color: var(--of-gold);
+    }
+
+    .services-hero p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+.services-hero .btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px !important;
+
+  background: #bd8737 !important;
+  color: #ffffff !important;
+  border: 2px solid #bd8737 !important;
+
+  border-radius: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.services-hero .btn-get-started:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+    .hero-side-card {
+      padding: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-side-card h3 {
+      color: #fff;
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .hero-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    }
+
+    .hero-point:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .hero-point i {
+      color: var(--of-gold);
+      font-size: 23px;
+      margin-top: 2px;
+    }
+
+    .hero-point span {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Section headings */
+
+    .services-section {
+      padding: 80px 0;
+    }
+
+    .services-section-title {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 48px;
+    }
+
+    .services-section-title .eyebrow {
+      display: block;
+      color: var(--of-gold);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .services-section-title h2 {
+      color: #202729;
+      font-family: "Raleway", sans-serif;
+      font-size: clamp(29px, 4vw, 40px);
+      line-height: 1.25;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .services-section-title p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    /* Intro */
+
+    .services-intro {
+      background: #fff;
+    }
+
+    .services-intro-content h2 {
+      color: #202729;
+      font-family: "Raleway", sans-serif;
+      font-size: 35px;
+      line-height: 1.3;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .services-intro-content p {
+      color: #626262;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .intro-highlight {
+      border-left: 4px solid var(--of-gold);
+      padding: 18px 22px;
+      margin-top: 25px;
+      background: var(--of-light);
+      color: #30383a;
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    /* Service cards */
+
+    .service-offerings {
+      background: var(--of-light);
+    }
+
+    .service-card {
+      height: 100%;
+      padding: 32px 28px;
+      background: #fff;
+      border: 1px solid #e9e9e9;
+      border-radius: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--of-gold);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.07);
+    }
+
+    .service-card .service-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 58px;
+      height: 58px;
+      border-radius: 12px;
+      background: rgba(189, 135, 55, 0.12);
+      color: var(--of-gold);
+      font-size: 27px;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      color: #222a2c;
+      font-family: "Raleway", sans-serif;
+      font-size: 21px;
+      font-weight: 750;
+      margin-bottom: 13px;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    /* Hiring process */
+
+    .service-process {
+      background: var(--of-dark);
+      color: #fff;
+    }
+
+    .service-process .services-section-title h2 {
+      color: #fff;
+    }
+
+    .service-process .services-section-title p {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .process-card {
+      height: 100%;
+      padding: 25px 20px;
+      border-top: 2px solid rgba(189, 135, 55, 0.7);
+      background: rgba(255, 255, 255, 0.055);
+      border-radius: 0 0 12px 12px;
+    }
+
+    .process-number {
+      display: inline-block;
+      color: var(--of-gold);
+      font-family: "Raleway", sans-serif;
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .process-card h3 {
+      color: #fff;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .process-card p {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    /* Sectors */
+
+    .service-sectors {
+      background: #fff;
+    }
+
+    .sector-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 13px;
+      margin-top: 30px;
+    }
+
+    .sector-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 19px;
+      border: 1px solid #e7e7e7;
+      border-radius: 50px;
+      background: #fff;
+      color: #333;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .sector-item i {
+      color: var(--of-gold);
+      font-size: 17px;
+    }
+
+    /* Audiences */
+
+    .service-audiences {
+      background: var(--of-light);
+    }
+
+    .audience-card {
+      height: 100%;
+      padding: 34px;
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid #e9e9e9;
+    }
+
+    .audience-card h3 {
+      color: #242b2d;
+      font-size: 24px;
+      font-weight: 750;
+      margin-bottom: 16px;
+    }
+
+    .audience-card p {
+      color: #666;
+      line-height: 1.8;
+    }
+
+    .audience-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--of-gold);
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    /* Call to action */
+
+    .services-cta {
+      padding: 75px 0;
+      background: var(--of-gold);
+      text-align: center;
+    }
+
+    .services-cta h2 {
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-size: clamp(29px, 4vw, 40px);
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .services-cta p {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .services-cta .cta-button {
+      display: inline-block;
+      padding: 13px 30px;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .services-cta .cta-button:hover {
+      color: var(--of-gold);
+      background: #fff;
+    }
+
+    /* Footer */
+
+    .services-page .footer {
+      background: #111719;
+    }
+
+    .services-page .footer a {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .services-page .footer a:hover {
+      color: var(--of-gold);
+    }
+
+    @media (max-width: 991px) {
+      .services-hero {
+        padding: 145px 0 75px;
+      }
+
+      .hero-side-card {
+        margin-top: 35px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .services-section {
+        padding: 55px 0;
+      }
+
+      .services-hero {
+        min-height: auto;
+        padding: 135px 0 65px;
+      }
+
+      .services-hero h1 {
+        font-size: 38px;
+      }
+
+      .services-hero p {
+        font-size: 16px;
+      }
+
+      .services-intro-content h2 {
+        font-size: 29px;
+      }
+
+      .service-card,
+      .audience-card {
+        padding: 27px 23px;
+      }
+    }
+  </style>
+</head>
+
+<body class="services-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo4.png" alt="One Frame Business Solutions logo">
+        <h1 class="sitename">One Frame</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+
+      <img src="assets/img/hero-bg-2.jpg" class="services-hero-bg" alt="">
+
+      <div class="container">
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-7" data-aos="fade-up">
+
+            <span class="services-eyebrow">One Frame Business Solutions</span>
+
+            <h1>
+              Talent solutions built around your
+              <span>business.</span>
+            </h1>
+
+            <p>
+              Finding the right people takes more than matching resumes
+              with job descriptions. We understand your hiring requirements,
+              identify suitable professionals and help connect talent with
+              meaningful opportunities.
+            </p>
+
+            <a href="contact.html" class="btn-get-started">
+              Discuss Your Hiring Needs
+            </a>
+
+          </div>
+
+          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="150">
+
+            <div class="hero-side-card">
+
+              <h3>A thoughtful approach to recruitment</h3>
+
+              <div class="hero-point">
+                <i class="bi bi-search"></i>
+                <span>Understand your organisation's talent requirements</span>
+              </div>
+
+              <div class="hero-point">
+                <i class="bi bi-person-check"></i>
+                <span>Identify and assess suitable professionals</span>
+              </div>
+
+              <div class="hero-point">
+                <i class="bi bi-diagram-3"></i>
+                <span>Connect the right candidates with the right opportunities</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- /Services Hero -->
+
+
+    <!-- Services Introduction -->
+    <section class="services-section services-intro">
+
+      <div class="container">
+
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-5" data-aos="fade-up">
+
+            <div class="services-section-title text-start mb-0">
+
+              <span class="eyebrow">What We Do</span>
+
+              <h2>How we help you build the right team</h2>
+
+              <p>
+                Every organisation has different people requirements.
+                Our recruitment approach is designed to understand those
+                requirements and connect businesses with professionals
+                who can contribute to their goals.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="150">
+
+            <div class="services-intro-content">
+
+              <h2>
+                Recruitment support from the first conversation
+                to the right fit.
+              </h2>
+
+              <p>
+                One Frame Business Solutions works with organisations
+                across diverse industries to support their recruitment
+                needs. We combine candidate sourcing, profile evaluation,
+                screening and interview coordination to make the hiring
+                journey more organised and effective.
+              </p>
+
+              <p>
+                Our focus is on understanding the role, recognising the
+                right skills and bringing employers and candidates together
+                through a considered recruitment process.
+              </p>
+
+              <div class="intro-highlight">
+                The objective is simple: help businesses find capable
+                professionals and help individuals discover opportunities
+                where they can grow.
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Services Introduction -->
+
+
+    <!-- Service Offerings -->
+    <section id="service-offerings" class="services-section service-offerings">
+
+      <div class="container">
+
+        <div class="services-section-title" data-aos="fade-up">
+
+          <span class="eyebrow">Our Recruitment Services</span>
+
+          <h2>Talent solutions for every hiring need</h2>
+
+          <p>
+            From identifying prospective candidates to coordinating
+            the selection process, we support the key stages that
+            help organisations build effective teams.
+          </p>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <!-- Service 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+
+            <div class="service-card">
+
+              <div class="service-icon">
+                <i class="bi bi-people"></i>
+              </div>
+
+              <h3>End-to-End Recruitment</h3>
+
+              <p>
+                We support the recruitment journey from understanding
+                the role and sourcing candidates to screening,
+                shortlisting, interview coordination and placement.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-card">
+
+              <div class="service-icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+
+              <h3>Professional & Technical Hiring</h3>
+
+              <p>
+                We connect businesses with skilled professionals whose
+                experience, capabilities and qualifications align
+                with the requirements of the role.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="service-card">
+
+              <div class="service-icon">
+                <i class="bi bi-person-badge"></i>
+              </div>
+
+              <h3>Leadership & Specialist Hiring</h3>
+
+              <p>
+                We help organisations identify experienced professionals
+                and specialised talent for roles where expertise,
+                judgement and the right organisational fit matter.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+
+            <div class="service-card">
+
+              <div class="service-icon">
+                <i class="bi bi-file-earmark-person"></i>
+              </div>
+
+              <h3>Candidate Sourcing & Screening</h3>
+
+              <p>
+                We source candidate profiles and review resumes,
+                experience and qualifications to identify individuals
+                who best match the stated hiring requirements.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-card">
+
+              <div class="service-icon">
+                <i class="bi bi-clipboard2-check"></i>
+              </div>
+
+              <h3>Candidate Assessment & Shortlisting</h3>
+
+              <p>
+                Our screening approach helps evaluate candidate
+                suitability and present relevant profiles for
+                consideration by prospective employers.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="service-card">
+
+              <div class="service-icon">
+                <i class="bi bi-calendar2-check"></i>
+              </div>
+
+              <h3>Interview & Placement Coordination</h3>
+
+              <p>
+                We coordinate interviews between candidates and
+                employers, helping keep communication and the
+                recruitment process moving towards a suitable placement.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Service Offerings -->
+
+
+    <!-- Recruitment Process -->
+    <section class="services-section service-process">
+
+      <div class="container">
+
+        <div class="services-section-title" data-aos="fade-up">
+
+          <span class="eyebrow">Our Process</span>
+
+          <h2>A clear approach to finding the right talent</h2>
+
+          <p>
+            A structured recruitment journey helps bring clarity
+            to hiring requirements and creates a smoother experience
+            for both employers and candidates.
+          </p>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up">
+
+            <div class="process-card">
+
+              <span class="process-number">01</span>
+
+              <h3>Understand</h3>
+
+              <p>
+                We learn about the role, required capabilities,
+                experience and expectations of the organisation.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="process-card">
+
+              <span class="process-number">02</span>
+
+              <h3>Source</h3>
+
+              <p>
+                We identify potential candidates through our
+                recruitment resources and sourcing process.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="process-card">
+
+              <span class="process-number">03</span>
+
+              <h3>Screen & Shortlist</h3>
+
+              <p>
+                We review candidate profiles and assess their
+                suitability before presenting relevant profiles.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="process-card">
+
+              <span class="process-number">04</span>
+
+              <h3>Connect & Place</h3>
+
+              <p>
+                We coordinate interviews and support the process
+                of connecting the selected candidate with the employer.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Recruitment Process -->
+
+
+    <!-- Industries -->
+    <section class="services-section service-sectors">
+
+      <div class="container">
+
+        <div class="services-section-title" data-aos="fade-up">
+
+          <span class="eyebrow">Our Reach</span>
+
+          <h2>Supporting diverse industry requirements</h2>
+
+          <p>
+            Different industries call for different skills and
+            experiences. We work to understand the environment,
+            expectations and specific talent needs behind each role.
+          </p>
+
+        </div>
+
+        <div class="sector-list" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="sector-item">
+            <i class="bi bi-laptop"></i>
+            Information Technology
+          </div>
+
+          <div class="sector-item">
+            <i class="bi bi-heart-pulse"></i>
+            Healthcare
+          </div>
+
+          <div class="sector-item">
+            <i class="bi bi-building"></i>
+            Construction
+          </div>
+
+          <div class="sector-item">
+            <i class="bi bi-cup-hot"></i>
+            Hospitality
+          </div>
+
+          <div class="sector-item">
+            <i class="bi bi-bank"></i>
+            Finance
+          </div>
+
+          <div class="sector-item">
+            <i class="bi bi-grid"></i>
+            Other Industries
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Industries -->
+
+
+    <!-- Who We Help -->
+    <section class="services-section service-audiences">
+
+      <div class="container">
+
+        <div class="services-section-title" data-aos="fade-up">
+
+          <span class="eyebrow">Who We Work With</span>
+
+          <h2>Creating connections that move careers forward</h2>
+
+          <p>
+            Recruitment is about bringing the right people and
+            organisations together. We work with both sides
+            of that connection.
+          </p>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="audience-card">
+
+              <h3>For Employers</h3>
+
+              <p>
+                Build stronger teams with recruitment support designed
+                around your organisation's needs. We help identify,
+                screen and connect you with professionals who match
+                your role requirements.
+              </p>
+
+              <a href="contact.html">
+                Discuss Your Hiring Requirements
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="audience-card">
+
+              <h3>For Candidates</h3>
+
+              <p>
+                Explore opportunities that match your experience,
+                skills and career aspirations. We aim to connect
+                professionals with organisations looking for their
+                capabilities.
+              </p>
+
+              <a href="contact.html">
+                Get in Touch
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Who We Help -->
+
+
+    <!-- CTA -->
+    <section class="services-cta">
+
+      <div class="container" data-aos="fade-up">
+
+        <h2>Let's build the right team together.</h2>
+
+        <p>
+          Whether you are looking for skilled professionals or
+          exploring your next career opportunity, start a conversation
+          with One Frame Business Solutions.
+        </p>
+
+        <a href="contact.html" class="cta-button">
+          Contact One Frame
+        </a>
+
+      </div>
+
+    </section>
+    <!-- /CTA -->
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6 footer-about">
+
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">One Frame Business Solutions</span>
+          </a>
+
+          <div class="footer-contact pt-3">
+
+            <p>1-F 3rd Floor, Bharat Nagar</p>
+            <p>New Friends Colony, New Delhi, Delhi 110025</p>
+
+            <p class="mt-3">
+              <strong>Phone:</strong>
+              <a href="tel:01142048010">011 4204 8010</a>
+            </p>
+
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info@oneframesolution.com">
+                info@oneframesolution.com
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 footer-links">
+
+          <h4>Useful Links</h4>
+
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+        </div>
+
+
+        <div class="col-lg-5 col-md-12">
+
+          <h4>One Frame Business Solutions</h4>
+
+          <p>
+            Connecting businesses with skilled professionals
+            and helping individuals discover meaningful career
+            opportunities.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="container copyright text-center mt-4">
+
+      <p>
+        © <span>Copyright 2026</span>
+        <strong class="px-1 sitename">One Frame Business Solutions</strong>
+        <span>All Rights Reserved</span>
+      </p>
+
+    </div>
+
+  </footer>
+  <!-- /Footer -->
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
