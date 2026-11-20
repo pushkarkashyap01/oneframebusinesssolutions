@@ -1922,3 +1922,13 @@ main > section.section:not(.hero) {
 
 }
 
+/* Faster page preloader */
+#preloader {
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+#preloader.preloader-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
